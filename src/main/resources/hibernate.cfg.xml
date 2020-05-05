@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- JDBC драйвер -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <!-- URL для подключения к базе данных -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/drugs?serverTimezone=UTC</property>
+
+        <property name="hibernate.connection.username">nesqui</property>
+        <property name="hibernate.connection.password">[Top1parol1]</property>
+        <property name="show_sql">true</property>
+        <mapping resource="DrugsEntity.hbm.xml"/>
+        <mapping class="builder.Drug"/>
+    </session-factory>
+</hibernate-configuration>

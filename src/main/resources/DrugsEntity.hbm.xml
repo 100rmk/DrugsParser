@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="builder.Drug" table="testDrugs" schema="drugs">
+        <id name="id">
+            <column name="id" sql-type="int"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="varchar(300)" length="300"/>
+        </property>
+        <property name="manufacturer">
+            <column name="manufacturer" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="dosageForm">
+            <column name="dosage_form" sql-type="text"/>
+        </property>
+        <property name="medicalIndication">
+            <column name="indication" sql-type="text"/>
+        </property>
+        <property name="medicalContraIndication">
+            <column name="contraindication" sql-type="text"/>
+        </property>
+        <property name="sideEffect">
+            <column name="side_effect" sql-type="text"/>
+        </property>
+        <property name="overdose">
+            <column name="overdose" sql-type="text" not-null="false"/>
+        </property>
+        <property name="warning">
+            <column name="warning" sql-type="text" not-null="false"/>
+        </property>
+        <property name="pregnancy">
+            <column name="pregnancy" sql-type="text" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>
