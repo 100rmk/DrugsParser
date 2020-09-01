@@ -1,3 +1,3 @@
 # DrugsParser
-Парсинг лекарственного справочника с приминением паттерна builder и фреймворка hibernate
+Парсинг лекарственного справочника(сайт lsgeotar.ru) с приминением паттерна builder, фреймворка hibernate и СУБД mySQL
 ![](imgs/dbScreen.jpg)
